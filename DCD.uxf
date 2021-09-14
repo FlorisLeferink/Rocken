@@ -1,0 +1,2944 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>2</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1216</x>
+      <y>516</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>model::Workday
+--
+-id: int
+-date: LocalDate
+-note: String
+-published: boolean
+-listShift: ArrayList&lt;Shift&gt;
+--
++Workday(): ctor
++Workday(int id, LocalDate date, String note, boolean published): ctor
++getId(): int
++setId(int id): void
++getDate(): LocalDate
++setDate(LocalDate date): void
++getNote(): String
++setNote(String note): void
++isPublished(): boolean
++setPublished(boolean published): void
++addShift(Shift shift): void
++getShiftList(): ArrayList&lt;Shift&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>278</y>
+      <w>6</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;500.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>638</x>
+      <y>418</y>
+      <w>6</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;480.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>434</y>
+      <w>50</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>230.0;380.0;230.0;260.0;10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>402</y>
+      <w>74</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1018</x>
+      <y>436</y>
+      <w>32</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;370.0;140.0;230.0;10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>540</y>
+      <w>172</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>840.0;190.0;300.0;190.0;300.0;100.0;10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>662</x>
+      <y>526</y>
+      <w>168</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;820.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>666</y>
+      <w>156</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>760.0;1060.0;10.0;1060.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>294</y>
+      <w>6</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;420.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>294</y>
+      <w>186</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>910.0;400.0;910.0;220.0;10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>294</y>
+      <w>150</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;460.0;10.0;220.0;730.0;220.0;730.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>172</y>
+      <w>34</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>204</y>
+      <w>6</w>
+      <h>178</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;870.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>350</y>
+      <w>254</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;1250.0;10.0;1250.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>420</y>
+      <w>124</w>
+      <h>278</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1370.0;600.0;1370.0;600.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>474</x>
+      <y>204</y>
+      <w>168</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>820.0;910.0;820.0;780.0;10.0;780.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>804</y>
+      <w>342</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;370.0;1690.0;370.0;1690.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>638</y>
+      <w>6</w>
+      <h>206</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;1010.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>638</y>
+      <w>20</w>
+      <h>212</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;1040.0;10.0;1040.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>662</y>
+      <w>138</w>
+      <h>188</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;920.0;670.0;920.0;670.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>654</y>
+      <w>370</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1180.0;1830.0;1180.0;1830.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>478</x>
+      <y>204</y>
+      <w>60</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>280.0;260.0;280.0;230.0;10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>482</x>
+      <y>204</y>
+      <w>130</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>630.0;260.0;630.0;210.0;10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>538</y>
+      <w>6</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>332</x>
+      <y>552</y>
+      <w>6</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>536</y>
+      <w>6</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>706</y>
+      <w>6</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>858</x>
+      <y>662</y>
+      <w>64</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>300.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1042</x>
+      <y>540</y>
+      <w>6</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>4</x>
+      <y>362</y>
+      <w>1326</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;6610.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>454</y>
+      <w>1330</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;6630.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>542</y>
+      <w>6</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>254</x>
+      <y>610</y>
+      <w>26</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>434</y>
+      <w>294</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;700.0;10.0;50.0;1450.0;50.0;1450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>434</y>
+      <w>14</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+</panel_attributes>
+    <additional_attributes>10.0;1260.0;10.0;1170.0;50.0;1170.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>434</y>
+      <w>12</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+</panel_attributes>
+    <additional_attributes>40.0;1260.0;40.0;1170.0;10.0;1170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>418</y>
+      <w>138</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+</panel_attributes>
+    <additional_attributes>10.0;1340.0;10.0;1280.0;500.0;1280.0;500.0;400.0;670.0;400.0;670.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>434</y>
+      <w>106</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1120.0;10.0;140.0;510.0;140.0;510.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>836</x>
+      <y>434</y>
+      <w>426</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>2110.0;410.0;2110.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>434</y>
+      <w>328</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>1620.0;410.0;1620.0;90.0;10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>436</y>
+      <w>308</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1520.0;400.0;1520.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>420</y>
+      <w>48</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>220.0;480.0;220.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>420</y>
+      <w>404</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1190.0;10.0;400.0;2000.0;400.0;2000.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>420</y>
+      <w>916</w>
+      <h>158</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;770.0;10.0;240.0;4560.0;240.0;4560.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>286</y>
+      <w>96</w>
+      <h>404</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;2000.0;10.0;1010.0;460.0;1010.0;460.0;340.0;220.0;340.0;220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>204</y>
+      <w>296</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1850.0;10.0;730.0;1460.0;730.0;1460.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>204</y>
+      <w>114</w>
+      <h>486</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>480.0;2410.0;480.0;2270.0;540.0;2270.0;540.0;1380.0;10.0;1380.0;10.0;750.0;550.0;750.0;550.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>466</x>
+      <y>204</y>
+      <w>104</w>
+      <h>486</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;2410.0;100.0;1360.0;500.0;1360.0;500.0;810.0;10.0;810.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>452</x>
+      <y>286</y>
+      <w>162</w>
+      <h>404</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;2000.0;10.0;1880.0;110.0;1880.0;110.0;1030.0;620.0;1030.0;620.0;340.0;790.0;340.0;790.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>294</y>
+      <w>500</w>
+      <h>382</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>2480.0;1820.0;2480.0;1780.0;2170.0;1780.0;2170.0;1890.0;350.0;1890.0;350.0;700.0;10.0;700.0;10.0;140.0;410.0;140.0;410.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>156</x>
+      <y>278</y>
+      <w>238</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1480.0;10.0;310.0;1170.0;310.0;1170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>274</y>
+      <w>212</w>
+      <h>304</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1500.0;10.0;300.0;1040.0;300.0;1040.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>304</y>
+      <w>6</w>
+      <h>274</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1350.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>132</x>
+      <y>302</y>
+      <w>590</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>2930.0;1780.0;2930.0;1030.0;10.0;1030.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>280</y>
+      <w>956</w>
+      <h>298</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1470.0;10.0;150.0;3210.0;150.0;3210.0;110.0;4760.0;110.0;4760.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>280</y>
+      <w>314</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;490.0;10.0;130.0;1550.0;130.0;1550.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1128</x>
+      <y>280</y>
+      <w>26</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;500.0;10.0;180.0;110.0;180.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1154</x>
+      <y>280</y>
+      <w>30</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>130.0;1180.0;130.0;180.0;10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>722</x>
+      <y>280</y>
+      <w>426</w>
+      <h>382</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1890.0;10.0;990.0;1710.0;980.0;1710.0;160.0;2110.0;160.0;2110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>698</x>
+      <y>298</y>
+      <w>294</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1450.0;380.0;1450.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>206</y>
+      <w>50</w>
+      <h>456</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;2260.0;100.0;1180.0;190.0;1180.0;190.0;710.0;230.0;710.0;230.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>436</x>
+      <y>52</y>
+      <w>68</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>gui::AdminGui
+--
+-textId: JTextField
+-textFname: JTextField
+-textLname: JTextField
+-textEmail: JTextField
+-textPhoneNo: JTextField
+-roleComboBox: JComboBox
+-levelComboBox: JComboBox
+-employeeController: EmployeeController
+-roleController: RoleController
+-roleComboBoxModel: RoleComboBoxModel
+-levelComboBoxModel: LevelComboBoxModel
+-empComboBoxModel: EmployeeComboBoxModel
+-currEmployee: Employee
+-isAdminCheckBox: JCheckBox
+-employeeNoErrorLbl: JLabel
+-emailErrorLbl: JLabel
+-telephoneNoErrorLbl: JLabel
+-roleErrorLbl: JLabel
+-niveauErrorLbl: JLabel
+-selectEmpComboBox: JComboBox
+-textFieldEditEmp: JTextField
+-textFieldEditEmpName: JTextField
+-textFieldEditEmpLastName: JTextField
+-textFieldEditEmail: JTextField
+-textFieldEditPhone: JTextField
+-isAdminCheckBoxEdit: JCheckBox
+-roleComboBoxEdit: JComboBox
+-levelComboBoxEdit: JComboBox
+-updateEmployeeNoErrorLbl: JLabel
+-updateEmailErrorLbl: JLabel
+-updateTelephoneNoErrorLbl: JLabel
+-tempid: int
+-tftRole: JTextField
+-tftLevel: JTextField
+--
++AdminGui(Employee employee): ctor
+-populateUpdateEmp(): void
+-createNewRole(): void
+-createNewLevel(): void
+-deleteEmployee(): void
+-updateEmpoyee(): void
+-createEmployee(): void
+-init(): void
+-checkNumeric(String str): boolean
+-checkValidPhoneNo(String str): boolean
+-checkValidEmail(String str): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>260</y>
+      <w>44</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>gui::Main
+--
+-contentPane: JPanel
+--
++Main(Employee employee): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>382</x>
+      <y>242</y>
+      <w>54</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>gui::Login
+--
+-frame: JFrame
+-usernameField: JTextField
+-LogoLbl: JLabel
+-employeeController: EmployeeController
+~validationLbl: JLabel
+--
++Login(): ctor
++main(String[] args): void
+-initialize(): void
+-login(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>498</x>
+      <y>256</y>
+      <w>66</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>gui::RoleComboBoxModel
+--
+-selectedItem: Object
+-anArrayList: List&lt;Role&gt;
+--
++RoleComboBoxModel(List&lt;Role&gt; RolesList): ctor
++getSelectedItem(): Object
++setSelectedItem(Object newValue): void
++getSize(): int
++getElementAt(int i): Object
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>574</x>
+      <y>256</y>
+      <w>72</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>gui::LevelComboBoxModel
+--
+-selectedItem: Object
+-anArrayList: List&lt;Level&gt;
+--
++LevelComboBoxModel(List&lt;Level&gt; listOfRoles): ctor
++getSelectedItem(): Object
++setSelectedItem(Object newValue): void
++getSize(): int
++getElementAt(int i): Object
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>232</y>
+      <w>180</w>
+      <h>74</h>
+    </coordinates>
+    <panel_attributes>gui::SchedulerRenderer
+--
+-listOfDays: Vector&lt;Vector&gt;
+-shift: Shift
+-button: JButton
+-lbl: String
+-row: int
+-toggleAdmin: boolean
+-day: String
+-employee: Employee
+--
+~SchedulerRenderer(JTable table, Vector&lt;Vector&gt; days, boolean toggleAdmin, String currDate, Employee employee): ctor
+-selectDay(String date): void
+-getShifts(Object value): Shift
++getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column): Component
++getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column): java.awt.Component
++getCellEditorValue(): Object
++isCellEditable(EventObject anEvent): boolean
++shouldSelectCell(EventObject anEvent): boolean
++stopCellEditing(): boolean
++cancelCellEditing(): void
++addCellEditorListener(CellEditorListener l): void
++removeCellEditorListener(CellEditorListener l): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>646</x>
+      <y>154</y>
+      <w>66</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>gui::ShiftListTableModel
+--
+-serialVersionUID = 1L: long
+-data = new Vector&lt;Vector&gt;(): Vector&lt;Vector&gt;
+-COL_NAMES: String[]
+--
++ShiftListTableModel(): ctor
++ShiftListTableModel(Vector&lt;Vector&gt; data): ctor
++getColumnCount(): int
++getColumnName(int column): String
++setCol(List&lt;String&gt; day): void
++setData(Vector&lt;Vector&gt; days): void
++getShiftListOfColumn(int index): Vector&lt;Shift&gt;
++isCellEditable(int row, int col): boolean
++getValueAt(int row, int col): Object
++getRowCount(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>734</x>
+      <y>196</y>
+      <w>136</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayDialogbox
+--
+-shiftController: ShiftController
+-workdayController: WorkdayController
+-roleController: RoleController
+-roleComboBoxModel: RoleComboBoxModel
+-workdayShiftTableModel: WorkdayShiftTableModel
+-workdayRendererTableModel: WorkdayRendererTableModel
+-workdayShiftsWithShiftsRequestTableModel: WorkdayShiftsWithShiftsRequestTableModel
+-workdayShiftsWithShiftRequestRendererTableModel: WorkdayShiftsWithShiftRequestRendererTableModel
+-shiftTableList: JTable
+-shiftsRequestTable: JTable
+-contentPanel = new JPanel(): JPanel
+-date: LocalDate
+-btnCreateShiftButton: JButton
+-tftEndAt: JTextField
+-tftStartAt: JTextField
+-tftNote: JTextField
+-cbRole: JComboBox
+-lblErrorStartAt: JLabel
+-lblErrorEndAt: JLabel
+--
++WorkdayDialogbox(String day): ctor
+-init(): void
++validTime24(String time): boolean
+-convertStringToLocalTime(String time): LocalTime
+-createNewShift(String startAt, String endAt, String note, int roleId): void
+-fillTable(): void
+-renderAndEditTable(List&lt;Shift&gt; ShiftsList): void
+-getShiftsRequestTableSize(List&lt;Shift&gt; ShiftsList): int
+-exit(boolean confirm): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>138</y>
+      <w>176</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayRendererTableModel
+--
+-checkBox: JCheckBox
+-roleComboBox: JComboBox
+-shiftRequestComboBox: JComboBox
+-textField: JTextField
+-button: JButton
+-lbl: String
+-row: int
+-roleComboBoxModel: RoleComboBoxModel
+-shiftRequestComboBoxModel: ShiftRequestComboBoxModel
+-testing: int
+-shiftList: List&lt;Shift&gt;
+-shiftController: ShiftController
+-employeeController: EmployeeController
+-comboBoxEditor: TableCellEditor
+-comboBoxEditorEmployee: TableCellEditor
+-textFieldEditor: TableCellEditor
+-current: TableCellEditor
+--
+~WorkdayRendererTableModel(JTable table, List&lt;Role&gt; list, List&lt;Shift&gt; shiftList): ctor
++getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column): Component
++getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column): java.awt.Component
++getCellEditorValue(): Object
++isCellEditable(EventObject anEvent): boolean
++shouldSelectCell(EventObject anEvent): boolean
++stopCellEditing(): boolean
++cancelCellEditing(): void
++addCellEditorListener(CellEditorListener l): void
++removeCellEditorListener(CellEditorListener l): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>230</y>
+      <w>100</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>gui::RequestShiftDialogBox
+--
+~shiftRequestController: ShiftRequestController
+~shiftController: ShiftController
+-contentPanel = new JPanel(): JPanel
+-dateLbl: JLabel
+-noteLbl: JLabel
+-startAndEndTimeLbl: JLabel
+-commentTxt: JTextField
+-currentShiftRequest: ShiftRequest
+--
++RequestShiftDialogBox(String day, Shift shift, Employee employee): ctor
+-init(Employee employee, Shift shift): void
++confirm(Employee employee, Shift shift): void
++cancel(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>206</x>
+      <y>182</y>
+      <w>90</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>gui::EmployeeComboBoxModel
+--
+-selectedItem: Object
+-anArrayList: List&lt;Employee&gt;
+--
++EmployeeComboBoxModel(List&lt;Employee&gt; EmployeeList): ctor
++getSelectedItem(): Object
++setSelectedItem(Object newValue): void
++getSize(): int
++getElementAt(int i): Object
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>394</y>
+      <w>82</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>controller::DataAccessException
+--
+-serialVersionUID = 1L: long
+--
++DataAccessException(String message, Throwable e): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>386</y>
+      <w>62</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>controller::RoleController
+--
+-roleDB: RoleDBIF
+--
++RoleController(): ctor
++findRoleById(int id): Role
++findRoleByName(String name): Role
++CreateNewRole(String name): boolean
++ListOfRole(): List&lt;Role&gt;
+-checkListOfRoles(String name): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>380</y>
+      <w>106</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>controller::ShiftRequestController
+--
+-shiftRequestDB: ShiftRequestDBIF
+-shiftController: ShiftController
+--
++ShiftRequestController(): ctor
++findShiftRequestByRequestId(int id): ShiftRequest
++findAllShiftRequests(): List&lt;ShiftRequest&gt;
++findShiftRequestsByShiftId(Shift shift): List&lt;ShiftRequest&gt;
++createNewShiftRequest(String note, Shift shift, Employee employee): void
++removeShiftReqestByID(int id): void
++getEmployeesShiftRequestForShift(Employee employee, Shift shift): ShiftRequest
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>378</y>
+      <w>200</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>controller::EmployeeController
+--
+-employeeDB: EmployeeDBIF
+-levelDB: LevelDBIF
+--
++EmployeeController(): ctor
++findEmployeeById(int id): Employee
++findEmployeeByFirstAndLastName(String fullname): Employee
++CreateNewEmployee(int employeeNo, String fname, String lname, String email, String phoneNo, Role roleType, boolean isAdmin, Level level): boolean
++UpdateEmployee(int employeeNo, String fname, String lname, String email, String phoneNo, Role roleType, boolean isAdmin, Level level, int tempid): boolean
++DeleteEmployee(int employeeNo): void
++findAllEmployees(): List&lt;Employee&gt;
++findLevelById(int id): Level
++findLevelByName(String name): Level
++findAllLevels(): List&lt;Level&gt;
++CreateNewLevel(String name): boolean
+-checkListOfLevels(String name): boolean
+-checkListOfEmployees(String fname, String lname, String phoneNo): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>378</y>
+      <w>116</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>controller::ShiftController
+--
+-shiftDB: ShiftDBIF
+--
++ShiftController(): ctor
++getLastId(): int
++findShiftById(int id): Shift
++findShiftsByDate(LocalDate date): List&lt;Shift&gt;
++findAllShifts(): List&lt;Shift&gt;
++saveShiftToDatabasen(Workday workday, List&lt;Shift&gt; shiftList): void
++updateShift(Shift shift): void
++updateShift(int shiftId, LocalTime startAt, LocalTime endAt, String note, int roleId): void
++updateShift(): void
++createNewShift(LocalTime startAt, LocalTime endAt, String note, Role roleType): Shift
+-checkExitingShift(Workday workday, Shift shift): boolean
++getListOfShiftRequest(Shift shift): List&lt;ShiftRequest&gt;
++getWorkdayListOfShift(Workday workday): List&lt;Shift&gt;
++getEmployeesShiftRequestForShift(Employee employee, Shift shift): ShiftRequest
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>514</y>
+      <w>44</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::RoleDBIF
+--
+--
++findById(int i): Role
++insert(Role roleType): Role
++findAll(): List&lt;Role&gt;
++findByName(String name): Role
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>604</x>
+      <y>574</y>
+      <w>86</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>database::RoleDB
+--
+-con: DBConnection
+-FIND_ALL_Q = "select id, name from Role ": String
+-findAllPS: PreparedStatement
+-FIND_BY_ID_Q = FIND_ALL_Q + " where id = ?": String
+-findByIdPS: PreparedStatement
+-FIND_BY_NAME_Q = FIND_ALL_Q + " where name = ?": String
+-findByNamePS: PreparedStatement
+-INSERT_Q = "insert into Role (name) values (?)": String
+-insertPS: PreparedStatement
+--
++RoleDB(): ctor
+-init(): void
++findById(int id): Role
++findByName(String name): Role
++insert(Role role): Role
++findAll(): List&lt;Role&gt;
+-buildObjects(ResultSet rs): List&lt;Role&gt;
+-buildObject(ResultSet rs): Role
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>508</x>
+      <y>512</y>
+      <w>48</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::LevelDBIF
+--
+--
++findById(int id): Level
++insert(Level level): Level
++findAll(): List&lt;Level&gt;
++findByName(String name): Level
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>488</x>
+      <y>574</y>
+      <w>86</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>database::LevelDB
+--
+-con: DBConnection
+-FIND_ALL_Q = "select id, name from Level": String
+-findAllPS: PreparedStatement
+-FIND_BY_ID_Q = FIND_ALL_Q + " where id = ?": String
+-findByIdPS: PreparedStatement
+-FIND_BY_NAME_Q = FIND_ALL_Q + " where name = ?": String
+-findByNamePS: PreparedStatement
+-INSERT_Q = "insert into Level (name) values (?)": String
+-insertPS: PreparedStatement
+--
++LevelDB(): ctor
+-init(): void
++findById(int id): Level
++findByName(String name): Level
++insert(Level level): Level
++findAll(): List&lt;Level&gt;
+-buildObjects(ResultSet rs): List&lt;Level&gt;
+-buildObject(ResultSet rs): Level
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>918</x>
+      <y>674</y>
+      <w>80</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::ShiftRequestDBIF
+--
+--
++findById(int id): ShiftRequest
++findAll(): List&lt;ShiftRequest&gt;
++insert(ShiftRequest shiftRequest, Shift shift): ShiftRequest
++removeById(int id): void
++findShiftRequestByShiftId(int id): List&lt;ShiftRequest&gt;
+~getLastId(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>718</y>
+      <w>116</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>database::ShiftRequestDB
+--
+-con: DBConnection
+-employeeDB: EmployeeDBIF
+-FIND_ALL_Q = "select id, note, shiftId, employeeNo from ShiftRequest ": String
+-findAllPS: PreparedStatement
+-FIND_BY_ID_Q = FIND_ALL_Q + " where id = ?": String
+-findByIdPS: PreparedStatement
+-FIND_BY_SHIFT_ID_Q = FIND_ALL_Q + " where shiftId = ?": String
+-findByShiftIdPS: PreparedStatement
+-INSERT_Q = "insert into ShiftRequest (note, shiftId, employeeNo) values (?,?,?)": String
+-insertPS: PreparedStatement
+-REMOVE_Q = "delete from ShiftRequest where id = ?": String
+-removePS: PreparedStatement
+-LASTID_Q = "select top 1 id from ShiftRequest ORDER BY id DESC": String
+-lastIdPS: PreparedStatement
+--
++ShiftRequestDB(): ctor
+-init(): void
++findById(int id): ShiftRequest
++insert(ShiftRequest shiftRequest, Shift shift): ShiftRequest
++findShiftRequestByShiftId(int id): List&lt;ShiftRequest&gt;
++findAll(): List&lt;ShiftRequest&gt;
++removeById(int id): void
++getLastId(): int
+-buildObjects(ResultSet rs): List&lt;ShiftRequest&gt;
+-buildObject(ResultSet rs): ShiftRequest
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>826</x>
+      <y>510</y>
+      <w>62</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::ShiftDBIF
+--
+--
++findById(int id): Shift
++insert(Shift shift, Workday workday): Shift
++update(Shift shift): Shift
++findAll(): List&lt;Shift&gt;
++getLastId(): int
++findByDate(Workday workday): List&lt;Shift&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>782</x>
+      <y>568</y>
+      <w>154</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>database::ShiftDB
+--
+-con: DBConnection
+-employeeDB: EmployeeDBIF
+-shiftRequestDB: ShiftRequestDBIF
+-roleDB: RoleDBIF
+-FIND_ALL_Q = "select id, startat, endat, note, role, employeeNo, workdayId from Shift ": String
+-findAllPS: PreparedStatement
+-FIND_BY_ID_Q = FIND_ALL_Q + "  where id = ?": String
+-findByIdPS: PreparedStatement
+-FIND_BY_DATE_Q = FIND_ALL_Q + " where workdayId = ?": String
+-findByDatePS: PreparedStatement
+-UPDATE_SHIFT_Q = "Update Shift set startAt = ?, endAt = ?, note = ?, role = ?, employeeNo = ? where id = ?": String
+-updateShiftPS: PreparedStatement
+-INSERT_Q = "insert into Shift (startat, endat, note, role, employeeNo, workdayId) values (?,?,?,?,?,?)": String
+-insertPS: PreparedStatement
+-LASTID_Q = "select top 1 id, startat, endat, note, role, employeeNo, workdayId from Shift ORDER BY id DESC": String
+-lastIdPS: PreparedStatement
+--
++ShiftDB(EmployeeDBIF employeeDB, ShiftRequestDBIF shiftRequestDB): ctor
++ShiftDB(): ctor
+-init(): void
++getLastId(): int
++findById(int id): Shift
++findByDate(Workday workday): List&lt;Shift&gt;
++update(Shift shift): Shift
++insert(Shift shift, Workday workday): Shift
++findAll(): List&lt;Shift&gt;
+-buildObjects(ResultSet rs): List&lt;Shift&gt;
+-buildObject(ResultSet rs): Shift
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>292</x>
+      <y>518</y>
+      <w>84</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::EmployeeDBIF
+--
+--
++findAll(): List&lt;Employee&gt;
++findByEmployeeNo(int employeeNo): Employee
++findByName(String name): Employee
++insert(Employee employee): Employee
++update(Employee employee, int tempid): Employee
++findEmployeeByFirstAndLastName(String fullname): Employee
++deleteEmployeeById(int employeeNo): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>840</y>
+      <w>90</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>database::DBConnection
+--
+-connection = null: Connection
+-dbConnection: DBConnection
+-driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver": String
+-dbName = "Rocken": String
+-serverAddress = "localhost": String
+-serverPort = 1433: int
+-userName = "sa": String
+-password = "Thomas123": String
+--
+-DBConnection(): ctor
++getInstance(): DBConnection
++startTransaction(): void
++commitTransaction(): void
++rollbackTransaction(): void
++executeInsertWithIdentity(String sql): int
++executeInsertWithIdentity(PreparedStatement ps): int
++getConnection(): Connection
++disconnect(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>574</y>
+      <w>168</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>model::Employee
+--
+-employeeNo: int
+-fname: String
+-lname: String
+-email: String
+-phoneNo: String
+-role: Role
+-isAdmin: boolean
+-level: Level
+--
++Employee(): ctor
++Employee(int EmployeeNo, String fname, String lname, String email, String phoneNo, Role role, boolean isAdmin, Level level): ctor
++getEmployeeNo(): int
++setEmployeeNo(int employeeNo): void
++getFname(): String
++setFname(String fname): void
++getLname(): String
++setLname(String lname): void
++getEmail(): String
++setEmail(String email): void
++getPhoneNo(): String
++setPhoneNo(String phoneNo): void
++getRole(): Role
++setRole(Role role): void
++isAdmin(): boolean
++setAdmin(boolean isAdmin): void
++getLevel(): Level
++setLevel(Level level): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>658</y>
+      <w>100</w>
+      <h>92</h>
+    </coordinates>
+    <panel_attributes>model::Shift
+--
+-id: int
+-startAt: LocalTime
+-endAt: LocalTime
+-note: String
+-role: Role
+-employee: Employee
+-listOfShiftRequest: List&lt;ShiftRequest&gt;
+--
++Shift(): ctor
++Shift(int id, LocalTime startAt, LocalTime endAt, String note, Role role): ctor
++getId(): int
++setId(int id): void
++getStartAt(): LocalTime
++setStartAt(LocalTime startAt): void
++getEndAt(): LocalTime
++setEndAt(LocalTime endAt): void
++getNote(): String
++setNote(String note): void
++getRole(): Role
++setRole(Role role): void
++getEmployee(): Employee
++setEmployee(Employee employee): void
++getListOfShiftRequest(): List&lt;ShiftRequest&gt;
++setListOfShiftRequest(List&lt;ShiftRequest&gt; list): void
++addShiftRequest(ShiftRequest shiftRequest): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>426</x>
+      <y>686</y>
+      <w>44</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>model::Level
+--
+-id: int
+-name: String
+--
++Level(): ctor
++Level(int id, String name): ctor
++getId(): int
++setId(int id): void
++getName(): String
++setName(String name): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>686</y>
+      <w>42</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>model::Role
+--
+-id: int
+-name: String
+--
++Role(): ctor
++Role(String name): ctor
++getId(): int
++setId(int id): void
++getName(): String
++setName(String name): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1126</x>
+      <y>516</y>
+      <w>78</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>model::ShiftRequest
+--
+-id: int
+-note: String
+-employee: Employee
+--
++ShiftRequest(): ctor
++ShiftRequest(int id, String note, Employee employee): ctor
++getNote(): String
++setNote(String note): void
++getEmployee(): Employee
++setEmployee(Employee employee): void
++getId(): int
++setId(int id): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>162</x>
+      <y>214</y>
+      <w>82</w>
+      <h>364</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1800.0;10.0;790.0;390.0;790.0;390.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1208</x>
+      <y>244</y>
+      <w>100</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>gui::ShiftRequestComboBoxModel
+--
+-selectedItem: Object
+-anArrayList: List&lt;ShiftRequest&gt;
+--
++ShiftRequestComboBoxModel(): ctor
++ShiftRequestComboBoxModel(List&lt;ShiftRequest&gt; shiftRequestList): ctor
++getSelectedItem(): Object
++setSelectedItem(Object newValue): void
++getSize(): int
++getElementAt(int i): Object
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1182</x>
+      <y>280</y>
+      <w>80</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1180.0;10.0;220.0;380.0;220.0;380.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1076</x>
+      <y>168</y>
+      <w>100</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayShiftRequestTableModel
+--
+-data = new ArrayList(): List&lt;ShiftRequest&gt;
+-COL_NAMES = { "Fornavn", "Efternavn", "Role", "Level", "Note" }: String[]
+--
++WorkdayShiftRequestTableModel(): ctor
++WorkdayShiftRequestTableModel(List&lt;ShiftRequest&gt; data): ctor
++getColumnCount(): int
++getColumnName(int column): String
++setData(List&lt;ShiftRequest&gt; data): void
++getData(): List&lt;ShiftRequest&gt;
++getShiftsOfRow(int index): ShiftRequest
++getValueAt(int row, int column): Object
++getRowCount(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1096</x>
+      <y>214</y>
+      <w>96</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>460.0;1510.0;460.0;420.0;10.0;420.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>956</x>
+      <y>244</y>
+      <w>94</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayShiftsWithShiftsRequestTableModel
+--
+-data = new ArrayList(): List&lt;Shift&gt;
+-COL_NAMES = { "Start", "Slut", "Anmodninger" }: String[]
+--
++WorkdayShiftsWithShiftsRequestTableModel(): ctor
++WorkdayShiftsWithShiftsRequestTableModel(List&lt;Shift&gt; data): ctor
++getColumnCount(): int
++getColumnName(int column): String
++setData(List&lt;Shift&gt; data): void
++getData(): List&lt;Shift&gt;
++getShiftsOfRow(int index): Shift
++getValueAt(int row, int column): Object
++getRowCount(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>734</x>
+      <y>290</y>
+      <w>276</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>10.0;1840.0;10.0;1000.0;950.0;1000.0;950.0;40.0;1360.0;40.0;1360.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>92</y>
+      <w>176</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayShiftsWithShiftRequestRendererTableModel
+--
+-shifts: List&lt;Shift&gt;
+-shiftRequestTableModel: WorkdayShiftRequestTableModel
+-label: JLabel
+-lbl: String
+-row: int
+-newTable: JTable
+--
+~WorkdayShiftsWithShiftRequestRendererTableModel(JTable table, List&lt;Shift&gt; shifts): ctor
++getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column): Component
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>128</y>
+      <w>142</w>
+      <h>534</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>10.0;2650.0;10.0;1780.0;690.0;1780.0;690.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>128</y>
+      <w>206</w>
+      <h>116</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1010.0;440.0;1010.0;560.0;10.0;560.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>668</x>
+      <y>206</y>
+      <w>6</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>298</y>
+      <w>408</w>
+      <h>92</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;440.0;10.0;150.0;2020.0;150.0;2020.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>186</x>
+      <y>298</y>
+      <w>510</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1380.0;10.0;290.0;2530.0;290.0;2530.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>286</y>
+      <w>256</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;1260.0;100.0;1260.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>294</y>
+      <w>52</w>
+      <h>368</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1820.0;10.0;340.0;240.0;340.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>802</x>
+      <y>234</y>
+      <w>138</w>
+      <h>94</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>670.0;10.0;670.0;450.0;10.0;450.0;10.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>854</x>
+      <y>128</y>
+      <w>6</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;340.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>128</y>
+      <w>280</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>1380.0;1940.0;1380.0;1790.0;910.0;1790.0;910.0;930.0;10.0;930.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>914</x>
+      <y>234</y>
+      <w>262</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>1290.0;1410.0;1290.0;990.0;720.0;990.0;720.0;540.0;10.0;540.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>746</x>
+      <y>234</y>
+      <w>168</w>
+      <h>428</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;2120.0;10.0;1230.0;820.0;1230.0;820.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>234</y>
+      <w>410</w>
+      <h>456</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;2260.0;10.0;2140.0;420.0;2140.0;420.0;560.0;2030.0;560.0;2030.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>234</y>
+      <w>364</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;270.0;10.0;420.0;950.0;420.0;950.0;620.0;1800.0;620.0;1800.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>926</x>
+      <y>234</y>
+      <w>320</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1580.0;240.0;1580.0;310.0;10.0;310.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>340</y>
+      <w>478</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>2370.0;190.0;2370.0;20.0;10.0;20.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>302</x>
+      <y>366</y>
+      <w>660</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>3280.0;40.0;3280.0;20.0;10.0;20.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>416</y>
+      <w>982</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>4890.0;500.0;4890.0;290.0;10.0;290.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>202</x>
+      <y>416</y>
+      <w>490</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>2430.0;1210.0;2430.0;1190.0;2170.0;1190.0;2170.0;1300.0;300.0;1300.0;300.0;750.0;10.0;750.0;10.0;110.0;290.0;110.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>564</y>
+      <w>172</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>database::EmployeeDB
+--
+-con: DBConnection
+-roleTypeDB: RoleDBIF
+-levelDB: LevelDBIF
+-FIND_ALL_Q = "select employeeNo, fname, lname, email, phoneNo, isAdmin, role, level from Employee": String
+-findAllPS: PreparedStatement
+-FIND_BY_EmployeeNo_Q = FIND_ALL_Q + " where employeeNo = ?": String
+-findByEmployeeNoPS: PreparedStatement
+-FIND_BY_NAME_Q = FIND_ALL_Q + " where name = ?": String
+-findByNamePS: PreparedStatement
+-FIND_BY_FULL_NAME_Q = FIND_ALL_Q + " where fname + ' ' + lname = ?": String
+-findByFullNamePS: PreparedStatement
+-INSERT_Q = "insert into Employee (employeeNo, fname, lname, email, phoneNo, isAdmin, role, level) values (?, ?,?,?,?,?,?,?)": String
+-insertPS: PreparedStatement
+-UPDATE_Q = "UPDATE Employee SET employeeNo = ?, fname = ?, lname = ?, email = ?, phoneNo = ?, isAdmin = ?, role = ?, level = ?
+where employeeNo = ?": String
+-updatePS: PreparedStatement
+-DELETE_Q = "DELETE FROM Employee WHERE employeeNo = ?": String
+-deletePS: PreparedStatement
+--
++EmployeeDB(RoleDBIF RoleTypeDB, LevelDBIF LevelDB): ctor
++EmployeeDB(): ctor
+-init(): void
++findByEmployeeNo(int employeeNo): Employee
++findByName(String name): Employee
++findEmployeeByFirstAndLastName(String fullname): Employee
++insert(Employee employee): Employee
++update(Employee employee, int tempid): Employee
++deleteEmployeeById(int employeeNo): void
++findAll(): List&lt;Employee&gt;
+-buildObjects(ResultSet rs): List&lt;Employee&gt;
+-buildObject(ResultSet rs): Employee
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>474</x>
+      <y>434</y>
+      <w>74</w>
+      <h>82</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>350.0;390.0;350.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>332</x>
+      <y>434</y>
+      <w>140</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;420.0;10.0;60.0;680.0;60.0;680.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>502</x>
+      <y>434</y>
+      <w>304</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1260.0;10.0;1170.0;490.0;1170.0;490.0;630.0;960.0;630.0;960.0;90.0;1500.0;90.0;1500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>436</y>
+      <w>218</w>
+      <h>226</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1110.0;10.0;290.0;1070.0;290.0;1070.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>848</x>
+      <y>420</y>
+      <w>254</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;130.0;1250.0;130.0;1250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>220</y>
+      <w>36</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>gui::Monitor
+--
+--
++performChange(): void
++awaitChange(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>242</x>
+      <y>240</y>
+      <w>92</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>gui::WorkdayShiftTableModel
+--
+-roleController: RoleController
+-employeeController: EmployeeController
+-data = new ArrayList(): List&lt;Shift&gt;
+-COL_NAMES = { "Start", "Slut", "Note", "Rolle", "Medarbejder" }: String[]
+--
++WorkdayShiftTableModel(): ctor
++WorkdayShiftTableModel(List&lt;Shift&gt; data): ctor
++getColumnCount(): int
++getColumnName(int column): String
++setData(List&lt;Shift&gt; data): void
++getData(): List&lt;Shift&gt;
++getShiftsOfRow(int index): Shift
++getValueAt(int row, int column): Object
++setValueAt(Object value, int rowIndex, int colIndex): void
++getRowCount(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>138</x>
+      <y>294</y>
+      <w>154</w>
+      <h>284</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;1400.0;10.0;150.0;750.0;150.0;750.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>298</x>
+      <y>294</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>780.0;420.0;780.0;330.0;10.0;330.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>294</y>
+      <w>330</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1630.0;460.0;1630.0;140.0;10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>294</y>
+      <w>462</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;2290.0;40.0;2290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>868</x>
+      <y>268</y>
+      <w>92</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>440.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>412</y>
+      <w>74</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>358</y>
+      <w>322</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>1590.0;80.0;1590.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>38</x>
+      <y>414</y>
+      <w>1098</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1860.0;4010.0;1860.0;4010.0;1260.0;4660.0;1260.0;4660.0;330.0;5470.0;330.0;5470.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>50</x>
+      <y>414</y>
+      <w>914</w>
+      <h>364</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1800.0;3600.0;1800.0;3600.0;470.0;4550.0;460.0;4550.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>434</y>
+      <w>602</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;700.0;10.0;80.0;2990.0;80.0;2990.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>46</x>
+      <y>414</y>
+      <w>774</w>
+      <h>368</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1820.0;3670.0;1820.0;3670.0;500.0;3850.0;500.0;3850.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>542</y>
+      <w>460</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;70.0;2280.0;70.0;2280.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>646</x>
+      <y>538</y>
+      <w>192</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;940.0;70.0;940.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>584</y>
+      <w>130</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;260.0;630.0;260.0;630.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>886</x>
+      <y>530</y>
+      <w>156</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>760.0;200.0;760.0;130.0;30.0;130.0;30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>758</x>
+      <y>556</y>
+      <w>278</w>
+      <h>106</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>1370.0;70.0;1370.0;20.0;10.0;20.0;10.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>34</x>
+      <y>414</y>
+      <w>1000</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1880.0;4050.0;1880.0;4050.0;1270.0;4980.0;1270.0;4980.0;1210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>548</y>
+      <w>360</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0;1260.0;10.0;1260.0;120.0;1780.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>762</x>
+      <y>560</y>
+      <w>64</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>300.0;40.0;300.0;20.0;10.0;20.0;10.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>508</y>
+      <w>276</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;230.0;1210.0;230.0;1210.0;10.0;1360.0;10.0;1360.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>414</y>
+      <w>796</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1840.0;3960.0;1840.0;3960.0;1240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>58</x>
+      <y>414</y>
+      <w>536</w>
+      <h>356</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1760.0;2660.0;1760.0;2660.0;250.0;2000.0;250.0;2000.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>30</x>
+      <y>414</y>
+      <w>914</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1900.0;4130.0;1900.0;4130.0;1490.0;4550.0;1490.0;4550.0;1470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>536</y>
+      <w>534</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>2650.0;910.0;2650.0;850.0;2000.0;850.0;2000.0;60.0;80.0;60.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1002</x>
+      <y>584</y>
+      <w>238</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;730.0;1170.0;730.0;1170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>726</y>
+      <w>128</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;620.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>670</y>
+      <w>716</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0;3560.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>26</x>
+      <y>414</y>
+      <w>920</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1980.0;4580.0;1980.0;4580.0;1960.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>764</x>
+      <y>584</y>
+      <w>470</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;430.0;2330.0;430.0;2330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>198</y>
+      <w>146</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;710.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>716</y>
+      <w>158</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;770.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>670</y>
+      <w>490</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;290.0;2430.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>206</x>
+      <y>500</y>
+      <w>940</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0;4680.0;10.0;4680.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>188</x>
+      <y>670</y>
+      <w>312</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1540.0;80.0;1540.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>184</x>
+      <y>670</y>
+      <w>264</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1300.0;80.0;1300.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>530</y>
+      <w>96</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0;460.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>530</y>
+      <w>204</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;60.0;910.0;60.0;910.0;10.0;1000.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>446</x>
+      <y>650</y>
+      <w>16</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>60.0;180.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>446</x>
+      <y>646</y>
+      <w>66</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>310.0;200.0;310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>66</x>
+      <y>414</y>
+      <w>296</w>
+      <h>298</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1470.0;1460.0;1470.0;1460.0;1260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>62</x>
+      <y>414</y>
+      <w>470</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1740.0;2330.0;1740.0;2320.0;1130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>562</y>
+      <w>54</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;620.0;10.0;10.0;250.0;10.0;250.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>54</x>
+      <y>414</y>
+      <w>596</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1780.0;2960.0;1780.0;2960.0;1130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>638</y>
+      <w>102</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;100.0;490.0;100.0;490.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>596</x>
+      <y>904</y>
+      <w>26</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2</x>
+      <y>270</y>
+      <w>22</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>GUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2</x>
+      <y>372</y>
+      <w>22</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>Controller
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>466</y>
+      <w>22</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>DB/Model
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>356</x>
+      <y>236</y>
+      <w>6</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>422</y>
+      <w>38</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>controller::MonitorController
+--
+~monitorDB: MonitorDBIF
+--
++MonitorController(): ctor
++checkIfEdited(): Boolean
++changePerformed(): void
++informationUpdated(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>40</x>
+      <y>224</y>
+      <w>304</w>
+      <h>202</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>330.0;990.0;330.0;730.0;10.0;730.0;10.0;10.0;1500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>118</x>
+      <y>814</y>
+      <w>38</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::MonitorDBIF
+--
+--
++checkForEdit(): Boolean
++stateChanged(): void
++informationUpdated(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>846</y>
+      <w>110</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>database::MonitorDB
+--
+-con: DBConnection
+-FIND_ALL_DATETIMES = "select edited from LastEdited": String
+-findAllDt: PreparedStatement
+-CHANGE_MADE = "UPDATE TOP (1) LastEdited SET  edited = 1": String
+-changeMadePS: PreparedStatement
+-INFORMATION_UPDATED = "UPDATE TOP (1) LastEdited SET  edited = 0": String
+-informationUpdatedPS: PreparedStatement
+--
++MonitorDB(): ctor
+-init(): void
++checkForEdit(): Boolean
++stateChanged(): void
++informationUpdated(): void
+-buildObject(ResultSet rs): Boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>136</x>
+      <y>836</y>
+      <w>6</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>72</x>
+      <y>448</y>
+      <w>68</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>320.0;1830.0;320.0;1510.0;10.0;1510.0;10.0;150.0;170.0;150.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>22</x>
+      <y>414</y>
+      <w>66</w>
+      <h>448</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;2220.0;310.0;2220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>236</y>
+      <w>74</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>gui::ScheduleGui
+--
+-weekChange = 0: int
+-scheduleTable: JTable
+-shiftListTableModel: ShiftListTableModel
+-scheduleController: ScheduleController
+-workdayController: WorkdayController
+-listOfDates: List&lt;String&gt;
+-days: Vector&lt;Vector&gt;
+-toggleAdmin = false: boolean
+-tglbtnAdminToggleButton: JToggleButton
+-employee: Employee
+-monitor: Monitor
+--
++ScheduleGui(Employee employee, Monitor monitor): ctor
+-itemStateChanged(boolean stat): void
+-init(): void
+-fillTable(): void
+-changeWeek(int i): void
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>214</x>
+      <y>386</y>
+      <w>122</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>controller::ScheduleController
+--
+-workdayController: WorkdayController
+-shiftController: ShiftController
+--
++ScheduleController(): ctor
++ScheduleController(WorkdayController workdayController, ShiftController shiftController): ctor
++maxNumberOfShifts(List&lt;Workday&gt; workdayList): int
++rowData(List&lt;String&gt; dates): Vector&lt;Vector&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>570</y>
+      <w>122</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>database::WorkdayDB
+--
+-con: DBConnection
+-shiftDB: ShiftDBIF
+-FIND_ALL_Q = "select id, date, note, published from Workday": String
+-findAllPS: PreparedStatement
+-FIND_BY_ID_Q = FIND_ALL_Q + " where id = ?": String
+-findById: PreparedStatement
+-FIND_BY_Date_Q = FIND_ALL_Q + " where date = ?": String
+-findByDate: PreparedStatement
+-INSERT_Q = "insert into Workday (date, note, published ) values (?,?,?)": String
+-insertPS: PreparedStatement
+-LASTID_Q = "select top 1 id, date, note, published from Workday ORDER BY id DESC": String
+-lastIdPS: PreparedStatement
+-WORKDAY_RANGE = "SELECT * FROM Workday WHERE date between ? and ?": String
+-workdayRange: PreparedStatement
+--
++WorkdayDB(): ctor
+-init(): void
++getLastId(): int
++findById(int id): Workday
++findByDate(LocalDate date): Workday
++insert(Workday workday): Workday
++findAll(): List&lt;Workday&gt;
++findWorkdayRange(String startDate, String endDate): List&lt;Workday&gt;
+-buildObjects(ResultSet rs): List&lt;Workday&gt;
+-buildObject(ResultSet rs): Workday
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>510</y>
+      <w>92</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+database::WorkdayDBIF
+--
+--
++findById(int id): Workday
++insert(Workday workday): Workday
++findAll(): List&lt;Workday&gt;
++findByDate(LocalDate date): Workday
++getLastId(): int
+~findWorkdayRange(String startDate, String endDate): List&lt;Workday&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>934</x>
+      <y>374</y>
+      <w>106</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>controller::WorkdayController
+--
+-workdayDB: WorkdayDBIF
+-currWorkday: Workday
+-shiftController: ShiftController
+-roleController: RoleController
+--
++WorkdayController(): ctor
++findWorkdayById(int id): Workday
++findWorkdayByDate(LocalDate date): Workday
++findAllWorkdays(): List&lt;Workday&gt;
++saveWorkday(): boolean
++setCurrWorkday(LocalDate date): void
++createNewShift(LocalTime startAt, LocalTime endAt, String note, int roleId): void
++getShiftForWorkday(): List&lt;Shift&gt;
++createNewWorkday(LocalDate date, String note, boolean published): Workday
++getlastWorkdayId(): int
+-CheckWorkday(LocalDate date): boolean
++getDaysOfWeek(int weeks): List&lt;String&gt;
++getListOfWorkdaysFromRange(String beginDate, String endDate): List&lt;Workday&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
